@@ -1,0 +1,151 @@
+% Template as of 22.04.2021 error free
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,5p,review]{elsarticle}
+%\documentclass[final,5p,times,twocolumn]{elsarticle}
+
+\usepackage{lineno}
+\usepackage{easylist}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage[breaklinks]{hyperref}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{verbatim}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{ulem}
+%\usepackage[ampersand]{easylist}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{listings} 
+\pgfplotsset{compat=1.14}
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\usepackage{tikzscale}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+\usepackage{tikz-qtree,tikz-qtree-compat}
+\usetikzlibrary{calc}
+\modulolinenumbers[5]
+
+\journal{Journal of \LaTeX\ Templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+\pdfstringdefDisableCommands{%
+  \def\corref#1{}%
+}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Crisp, Short, Clear, Concise Title of the Paper}
+
+%% or include affiliations in footnotes:
+\author[TUB]{Christian Geissler}
+\author[TUB]{Theodore Evans}
+\author[CAR]{Norman Zerbe}
+\author[xxx]{Erika Musterfrau}
+\author[xxx]{Max Mustermann}
+\author[MUG]{Markus Plass}
+\author[MUG]{Heimo Mueller}
+\author[MUG,amii]{Andreas Holzinger \corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{andreas.holzinger@medunigraz.at}
+
+\address[MUG]{Medical University Graz, Austria}
+\address[amii]{Alberta Machine Intelligence Institute, Canada}
+\address[xxx]{Lab Name, University Name, Address}
+
+\begin{abstract} 
+The spread of the use of artificial intelligence techniques is now pervasive and unstoppable. However, it brings with its opportunities but also risks and problems that must be addressed in order not to compromise an effective evolution. The eXplainable AI (XAI) is one of the answers to these problems to bring humans closer to machines.
+While from a research perspective the discussions on XAI date back a few decades, the concept emerged with renewed vigour at the end of 2019 when Google, after announcing its "AI-first" strategy in 2017, recently announced a new XAI toolset for developers. Nowadays many of the machine and deep learning applications do not allow you to understand how they work entirely or the logic behind them for effect called "BlackBox", according to which machine learning models are mostly black boxes. This feature is considered one of the biggest problems in the application of AI techniques; it makes machine decisions not transparent and often incomprehensible even to the eyes of experts or developers themselves. Explainable AI systems can explain the logic of decisions, characterize the strengths and weaknesses of decision making, and provide insights into their future behaviour.
+\end{abstract}
+
+\begin{keyword}
+Explainable AI, interpretable Machine Learning, interactive Machine Learning, aggregation functions, ordinal sums, Glass--box approach, transparency 
+\end{keyword}
+
+\end{frontmatter}
+\linenumbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\textbf{Highlights}}
+
+\begin{itemize}
+    \item This paper describes, analyzes, 
+    \item The novelty is, the results show, the paper demonstrates
+    \item The benefit is, it indicates that, 
+\end{itemize}
+
+\section{Introduction}
+\label{sec:Introduction}
+
+This is a sample reference \cite{HolzingerEtAl:2021:GraphFusion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\label{sec:Conclusion}
+
+
+\section*{Acknowledgements}
+
+We are grateful for the support of Mister Helpful for helping in shuffling. All Authors declare that there are no conflicts of interests. This work does not raise any ethical issues. Parts of this work have been funded by the Austrian Science Fund (FWF), Project: P-32554 explainable Artificial Intelligence. 
+
+\bibliography{references}
+
+
+%\section*{About the Authors}
+
+%\parpic{\includegraphics[width=1in,clip,keepaspectratio]{bio-images/dummy.jpg}}
+%\noindent {\bf Author Name} is the most famous author in her field. 
+%She is particularly interested in X and Y, and also dabbles in Z.
+
+%\bio{bio-images/dummy.jpg}
+%Theodore Evans is a junior researcher at the Distributed AI Laboratory at the Technisches Universität Berlin. He received his Masters in Physics from the University of Manchester.
+%\endbio
+
+%\bio{bio-images/dummy.jpg}
+%Max Mustermann is senior researcher at the awesome explainability Lab at the wonderful university of dreamland, and he is visiting researcher at the institute paradise in fantasy land. He received his Masters in computer science and her PhD in Computer Science from top university x. Erika is a member of the prestigious club wonder. 
+%\endbio
+
+%\bio{bio-images/holzinger.jpg}
+%Andreas Holzinger is Visiting Professor for explainable AI at the University of Alberta, Canada since 2019 and head of the Human-Centered AI Lab at the Medical University Graz, Austria. He received his PhD in cognitive science from Graz University and his second PhD in computer science from Graz University of Technology. Andreas is full member of the European Lab for Learning and Intelligent Systems.
+%\endbio
+
+\end{document}
+
+
